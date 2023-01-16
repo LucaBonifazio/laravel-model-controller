@@ -7,11 +7,19 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function base() {
+    public function main() {
         $movies = Movie::all();
 
-        return view('guest.layouts.base', [
+        return view('guest.main', [
             'movies' => $movies,
-        ])->name('base');
+        ]);
+    }
+
+    public function movie() {
+        $movies = Movie::where('id', '<', '3');
+
+        return view('guest.movie', [
+            'movies' => $movies,
+        ]);
     }
 }
