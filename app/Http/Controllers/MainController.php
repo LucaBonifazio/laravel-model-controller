@@ -16,7 +16,7 @@ class MainController extends Controller
     }
 
     public function movie() {
-        $movies = Movie::where('id', '=', '1')->get();
+        $movies = Movie::where('id', 1)->get();
 
         return view('guest.movie', [
             'movies' => $movies,
