@@ -5,7 +5,7 @@
     @foreach ($movies as $movie)
     <div class="col">
             <a href="/movie">
-                <div class="card" style="width: 18rem; height: 12rem;">
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
                     <h5 class="card-title">Title: {{$movie['title']}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Original title: {{$movie['original_title']}}</h6>
