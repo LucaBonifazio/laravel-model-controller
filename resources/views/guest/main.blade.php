@@ -1,7 +1,7 @@
 @extends('guest.layouts.base')
 
 @section('content')
-<div class="row row-cols-3 g-2 p-5">
+<div class="row row-cols-4 g-2 p-5">
     @foreach ($movies as $movie)
     <div class="col">
             <a href="/movie">
